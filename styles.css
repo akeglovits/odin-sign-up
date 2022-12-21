@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url(./fonts/Norse-Bold.otf);
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+.image-container {
+  background: url(./images/backround-image.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 150px;
+  padding: 10px;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+.title {
+  color: white;
+  font-size: 4.5rem;
+  padding-top: 15px;
+  font-family: Norse-Bold, Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+}

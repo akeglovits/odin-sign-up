@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="image-container">
+      <div class="logo-container">
+        <img src="./images/odin-logo.png" alt="Odin Logo" class="logo" />
+        <div class="title">ODIN</div>
+      </div>
+    </div>
+    <div class="sign-up-container">
+      <form action="" class="sign-up-form">
+        <div class="top-text">
+          <div class="paragraph-1">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+            <br />Sign up <em>now</em> to get started.
+          </div>
+          <div class="paragraph-2">You <em>know</em> you want to.</div>
+        </div>
+        <div class="sign-up-contianer">
+          <fieldset>
+            <legend>Let's do this!</legend>
+            <div class="row-1">
+              <div class="col-1">
+                <label for="first_name">FIRST NAME</label>
+                <input id="first_name" name="first_name" type="text" />
+              </div>
+              <div class="col-2">
+                <label for="last_name">LAST NAME</label
+                ><input id="last_name" name="last_name" type="text" />
+              </div>
+            </div>
+            <div class="row-2">
+              <div class="col-1">
+                <label for="email">EMAIL</label>
+                <input id="email" name="email" type="email" />
+              </div>
+              <div class="col-2">
+                <label for="phone">PHONE NUMBER</label
+                ><input
+                  id="phone"
+                  name="phone"
+                  type="text"
+                  placeholder="XXX-XXX-XXXX"
+                />
+              </div>
+            </div>
+            <div class="row-3">
+              <div class="col-1">
+                <label for="password">PASSWORD</label>
+                <input id="pasword" name="password" type="password" />
+              </div>
+              <div class="col-2">
+                <label for="password_confirm">CONFIRM PASSWORD</label
+                ><input
+                  id="password_confirm"
+                  name="password_confirm"
+                  type="password"
+                />
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="submit-button-container">
+          <button type="submit" class="submit-button">Create Account</button>
+          <div class="account-text">
+            Already have an account? <a href="#" class="login">Log in</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
