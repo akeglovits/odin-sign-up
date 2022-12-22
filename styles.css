@@ -3,8 +3,15 @@
   src: url(./fonts/Norse-Bold.otf);
 }
 
+:root {
+  --side-margin: 50px;
+  --top-margin: 100px;
+  --green-color: #596d48;
+}
+
 body {
   display: flex;
+  justify-content: stretch;
   height: 100vh;
   margin: 0;
 }
@@ -13,7 +20,7 @@ body {
   background: url(./images/backround-image.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 30%;
+  flex: 1 1 500px;
   margin: 0;
   padding: 0;
 }
@@ -39,4 +46,94 @@ body {
   padding-top: 15px;
   font-family: Norse-Bold, Cambria, Cochin, Georgia, Times, "Times New Roman",
     serif;
+}
+
+.sign-up-container {
+  flex: 1 1 auto;
+  background-color: whitesmoke;
+}
+
+.top-text {
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: var(--top-margin);
+  padding-left: var(--side-margin);
+  padding-right: var(--side-margin);
+  padding-bottom: var(--side-margin);
+}
+
+.paragraph-1 {
+  margin-bottom: 20px;
+}
+
+.form-input-container {
+  background-color: white;
+  box-shadow: 0px 3px 10px -6px;
+  padding: 20px var(--side-margin);
+}
+
+.row {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-button-container {
+  padding-top: 20px;
+  padding-left: var(--side-margin);
+  padding-right: var(--side-margin);
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 12px;
+}
+
+input {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 5px 10px;
+  width: 200px;
+}
+
+input:focus {
+  outline: none;
+  border-color: dodgerblue;
+  box-shadow: 0px 3px 10px -6px;
+}
+
+input.error {
+  border-color: red;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  background-color: var(--green-color);
+  color: white;
+  font-size: 16px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--green-color);
 }
